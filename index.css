@@ -1005,6 +1005,7 @@ hr{
     outline: none;
     color: #000000;
     background-color: #62bdfc;
+    cursor: pointer;
 }
 .section10 .footer .part2 .input input{
     font-size: 15px;
