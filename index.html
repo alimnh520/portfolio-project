@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Heder start-->
+
+
+    <header>
+        <div class="logo">
+                        <img src="data:image/jpeg;base64,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" alt="logo">
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">home <i class="fa-solid fa-arrow-down"></i></a></li>
+                <li><a href="#">about us <i class="fa-solid fa-arrow-down"></i></a></li>
+                <li >servises <i class="fa-solid fa-arrow-down"></i>
+                    <ul class="service">
+                        <li>web development <i class="fa-solid fa-arrow-right"></i>
+                            <ul><li>price 10k</li></ul>
+                        </li>
+                        <hr>
+                        <li>web design <i class="fa-solid fa-arrow-right"></i>
+                            <ul><li>price 7k</li></ul>
+                        </li>
+                        <hr>
+                        <li>graphic design <i class="fa-solid fa-arrow-right"></i>
+                            <ul><li>price 12k</li></ul>
+                        </li>
+                        <hr>
+                        <li>digital marketing <i class="fa-solid fa-arrow-right"></i>
+                            <ul><li>price 8k</li></ul>
+                        </li>
+                        <hr>
+                        <li>data entry <i class="fa-solid fa-arrow-right"></i>
+                            <ul><li>price 5k</li></ul>
+                        </li>
+                        <hr>
+                    </ul>
+                </li>
+                <li><a href="#">protfolio <i class="fa-solid fa-arrow-down"></i></a></li>
+                <li>contact <i class="fa-solid fa-arrow-down"></i>
+                    <ul class="contact">
+                        <li>01931039368</li>
+                        <li>01403985488</li>
+                    </ul>
+                </li>
+                <li><a href="#">learn more <i class="fa-solid fa-arrow-down"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Heder end-->
+
+    <!--section1 start-->
+
+    <div class="section1">
+        <div class="text1">
+            <h4>THIS IS ME</h4>
+            <h1>NAHID HASAN</h1>
+            <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Necessitatibus Corporis Consequatur Dolores Deserunt Voluptates Soluta Id Ducimus Nostrum Omnis Amet.</p>
+            <button>discover now</button>
+        </div>
+        <div class="img1">
+            <img src="img1.svg" alt="">
+        </div>
+    </div>
+
+    <!--section1 end-->
+
+    <hr>
+    <!--section2 start-->
+
+    <div class="section2">
+
+        <div class="img2">
+            <img src="img3.svg" alt="">
+        </div>
+        <div class="text2">
+            <h4>ABOUT ME</h4>
+            <h1>PERSONAL DETAILS</h1>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Aut Explicabo Voluptatibus, Tenetur Veritatis Aliquid Atque Accusantium Temporibus Quos! Temporibus, Earum?</p>
+            <button>view full details</button>
+        </div>
+
+    </div>
+
+    <!--section2 end-->
+
+    <!--section3 start-->
+
+    <div class="section3">
+        <div class="text3">
+
+        <h2>My Offered Services</h2>
+        <p>At about this time of year, some month after New Year's relations have been made and kept, or made and neglected</p>
+
+        </div>
+        
+        <div class="iconContainer">
+
+            <div class="service">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h3>Web Design</h3>
+                <p>"It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult"</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h3>web development</h3>
+                <p>If you are an entrepreneur, you know that you success cannot depend pn the opinions of others, Like the , opinions</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h3>photography</h3>
+                <p>do you want to be even more successful? learn to love learning and growth. the more effort you put into improving your skills</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h3>photography</h3>
+                <p>do you want to be even more successful? learn to love learning and growth. the more effort you put into improving your skills</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h3>photography</h3>
+                <p>do you want to be even more successful? learn to love learning and growth. the more effort you put into improving your skills</p>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h3>photography</h3>
+                <p>do you want to be even more successful? learn to love learning and growth. the more effort you put into improving your skills</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--section3 end-->
+
+    <!--section4 start-->
+
+    <div class="section4">
+
+        <div class="text">
+            <h1>2540</h1>
+            <h4>Project Compeleted</h4>
+        </div>
+        <div class="text">
+            <h1>2540</h1>
+            <h4>Project Compeleted</h4>
+        </div>
+
+        <div class="text">
+            <h1>2540</h1>
+            <h4>Project Compeleted</h4>
+        </div>
+
+        <div class="text">
+            <h1>2540</h1>
+            <h4>Project Compeleted</h4>
+        </div>
+
+    </div>
+
+    <!--section4 end-->
+
+    <!--section5 start-->
+
+    <div class="section5">
+        <div class="text">
+            <h1>our latest featured project</h1>
+            <p>Who are in extremly love with eco friendly system</p>
+        </div>
+
+        <div class="mainfolio">
+
+
+        <div class="proutfolio">
+            <div class="img">
+                <i class="fa-solid fa-camera"></i>
+                <img src="img/p1.jpg" alt="">
+            </div>
+            <h2>2D Vinyl design</h2>
+            <h4>vector</h4>
+        </div>
+
+        <div class="proutfolio">
+            <div class="img">
+                <i class="fa-solid fa-camera"></i>
+                <img src="img/p2.jpg" alt="">
+            </div>
+            <h2>2D Vinyl design</h2>
+            <h4>vector</h4>
+        </div>
+
+        <div class="proutfolio">
+            <div class="img">
+                <i class="fa-solid fa-camera"></i>
+                <img src="img/p3.jpg" alt="">
+            </div>
+            <h2>2D Vinyl design</h2>
+            <h4>vector</h4>
+        </div>
+
+        <div class="proutfolio">
+            <div class="img">
+                <i class="fa-solid fa-camera"></i>
+                <img src="img/p4.jpg" alt="">
+            </div>
+            <h2>2D Vinyl design</h2>
+            <h4>vector</h4>
+        </div>
+
+        <div class="proutfolio">
+            <div class="img">
+                <i class="fa-solid fa-camera"></i>
+                <img src="img/p5.jpg" alt="">
+            </div>
+            <h2>2D Vinyl design</h2>
+            <h4>vector</h4>
+        </div>
+
+        <div class="proutfolio">
+            <div class="img">
+                <i class="fa-solid fa-camera"></i>
+                <img src="img/p6.jpg" alt="">
+            </div>
+            <h2>2D Vinyl design</h2>
+            <h4>vector</h4>
+        </div>
+    
+       </div>
+    </div>
+
+    <!--section5 end-->
+
+    <!--section6 start-->
+
+    <div class="section6">
+
+        <div class="about">
+            <h1>Client's feedback about me</h1>
+            <p>It is very to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person</p>
+        </div>
+
+        <div class="fdback">
+
+        <div class="feedback">
+            <img src="g1.jpg" alt="">
+            <div class="textfd">
+                <p>do you want to be even more successful? learn to love, learning and groth.the more effort you put intu improving your skill's andthe bigger the payoff you</p>
+                <h2>harrieit maxwell</h2>
+                <h4>CEO at Google</h4>
+            </div>
+        </div>
+        <div class="feedback">
+            <img src="g2.jpg" alt="">
+            <div class="textfd">
+                <p>do you want to be even more successful? learn to love, learning and groth.the more effort you put intu improving your skill's andthe bigger the payoff you</p>
+                <h2>harrieit maxwell</h2>
+                <h4>CEO at Facebook</h4>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!--section6 end-->
+
+    <!--section7 start-->
+
+    <div class="section7">
+
+        <div class="text">
+
+        <h1>choose your plan</h1>
+        <p>When someone does something that they know that they shouldn't do,did they</p>
+
+        </div>
+
+       <div class="mainCard">
+
+        <div class="cart">
+            <div class="circle"><h1>01</h1></div>
+            <h2>echonomy</h2>
+            <h3>for the individuals</h3>
+            <hr>
+            <h4>secure online transfer</h4>
+            <hr>
+            <h4>unlimited styles for interface</h4>
+            <hr>
+            <h4>reliable cuetomer service</h4>
+            <hr>
+            <div class="money">
+                <h1>$23.40</h1>
+            <button>buy now</button>
+            </div>
+        </div>
+
+       <div class="cart">
+        <div class="circle"><h1>02</h1></div>
+        <h2>echonomy</h2>
+        <h3>for the individuals</h3>
+        <hr>
+        <h4>secure online transfer</h4>
+        <hr>
+        <h4>unlimited styles for interface</h4>
+        <hr>
+        <h4>reliable cuetomer service</h4>
+        <hr>
+        <div class="money">
+            <h1>$23.40</h1>
+        <button>buy now</button>
+        </div>
+        </div>
+
+   <div class="cart">
+    <div class="circle"><h1>03</h1></div>
+    <h2>echonomy</h2>
+    <h3>for the individuals</h3>
+    <hr>
+    <h4>secure online transfer</h4>
+    <hr>
+    <h4>unlimited styles for interface</h4>
+    <hr>
+    <h4>reliable cuetomer service</h4>
+    <hr>
+    <div class="money">
+        <h1>$23.40</h1>
+    <button>buy now</button>
+    </div>
+    </div>
+
+    <div class="cart">
+    <div class="circle"><h1>04</h1></div>
+    <h2>echonomy</h2>
+    <h3>for the individuals</h3>
+    <hr>
+    <h4>secure online transfer</h4>
+    <hr>
+    <h4>unlimited styles for interface</h4>
+    <hr>
+    <h4>reliable cuetomer service</h4>
+    <hr>
+    <div class="money">
+        <h1>$23.40</h1>
+    <button>buy now</button>
+    </div>
+    </div>
+
+</div>
+
+<!--section7 end-->
+
+<!--section8 start-->
+
+
+<div class="section8">
+    <h1>latest posts from our blog</h1>
+    <p>You may be a skillfull,effect employer but if you didn't trust your personnel and the opposite, then the chance of improving and expanding the business </p>
+
+
+    <div class="mainblogs">
+
+    <div class="blogs">
+        <img src="b3.jpg" alt="" class="zoom">
+        <div class="profile">
+            <img src="g2.jpg" alt="g2">
+            <h3>Mark Wiens</h3>
+            <h4>13th Dec</h4>
+            <i class="fa-regular fa-heart"></i> 15
+            <i class="fa-regular fa-comment"></i> 04
+        </div>
+        <hr>
+        <div class="post-text">
+            <h2>breck through self doubt and fear</h2>
+            <p>Dream interpretion has many form, it can be done for the sake of fun, hobby or can be taken up as a srerious career</p>
+        </div>
+    </div>
+
+    <div class="blogs">
+        <img src="b2.jpg" alt="" class="zoom">
+        <div class="profile">
+            <img src="g1.jpg" alt="g1">
+            <h3>Mark Wiens</h3>
+            <h4>13th Dec</h4>
+            <i class="fa-regular fa-heart"></i> 15 
+            <i class="fa-regular fa-comment"></i> 04
+        </div>
+        <hr>
+        <div class="post-text">
+            <h2>breck through self doubt and fear</h2>
+            <p>Dream interpretion has many form, it can be done for the sake of fun, hobby or can be taken up as a srerious career</p>
+        </div>
+    </div>
+
+    <div class="blogs">
+        <img src="b1.jpg" alt="" class="zoom">
+        <div class="profile">
+            <img src="g2.jpg" alt="g2">
+            <h3>Mark Wiens</h3>
+            <h4>13th Dec</h4>
+            <i class="fa-regular fa-heart"></i> 15 
+            <i class="fa-regular fa-comment"></i> 04
+        </div>
+        <hr>
+        <div class="post-text">
+            <h2>breck through self doubt and fear</h2>
+            <p>Dream interpretion has many form, it can be done for the sake of fun, hobby or can be taken up as a srerious career</p>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+<!--section8 end-->
+
+<!--section9 start-->
+
+
+<div class="section9">
+
+    <div class="skill">
+
+        <img src="l1.png.webp" alt="">
+        <img src="l2.png.webp" alt="">
+        <img src="l3.png.webp" alt="">
+        <img src="l4.png.webp" alt="">
+        <img src="l5.png.webp" alt="">
+
+    </div>
+
+</div>
+
+<!--section9 end-->
+
+<!--section10 start-->
+
+
+<div class="section10">
+
+    <div class="footer">
+
+    <div class="part1">
+        <h1>About Me</h1>
+        <p>We have tasted a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
+
+        <h4>Copyright @2023 All right reserved.This template is made with <i class="fa-regular fa-heart"></i> by <span>Nahid Hasan</span></h4>
+    </div>
+    <div class="part2">
+        <h1>Newsletter</h1>
+        <h4>Stay updated with our latest trends</h4>
+        <div class="input">
+        <input type="email" name="email" placeholder="Enter Email Address">
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="part3">
+        <h1>Follow Me</h1>
+        <h5>Let us be social</h5>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+
+<!--section10 end-->
+
+</body>
+</html>
