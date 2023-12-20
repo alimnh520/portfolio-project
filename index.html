@@ -13,13 +13,17 @@
 
 
     <header>
+        <input type="checkbox" id="chkbox">
+        <label for="chkbox">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <div class="logo">
                         <img src="data:image/jpeg;base64,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" alt="logo">
         </div>
         <div class="navbar">
-            <ul>
-                <li><a href="#">home <i class="fa-solid fa-arrow-down"></i></a></li>
-                <li><a href="#">about us <i class="fa-solid fa-arrow-down"></i></a></li>
+            <ul class="check">
+                <li><a href="#">home </a></li>
+                <li><a href="#">about us </a></li>
                 <li >servises <i class="fa-solid fa-arrow-down"></i>
                     <ul class="service">
                         <li>web development <i class="fa-solid fa-arrow-right"></i>
@@ -44,14 +48,14 @@
                         <hr>
                     </ul>
                 </li>
-                <li><a href="#">protfolio <i class="fa-solid fa-arrow-down"></i></a></li>
+                <li><a href="#">protfolio </a></li>
                 <li>contact <i class="fa-solid fa-arrow-down"></i>
                     <ul class="contact">
                         <li>01931039368</li>
                         <li>01403985488</li>
                     </ul>
                 </li>
-                <li><a href="#">learn more <i class="fa-solid fa-arrow-down"></i></a></li>
+                <li><a href="#">learn more </a></li>
             </ul>
         </div>
     </header>
