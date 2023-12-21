@@ -1558,6 +1558,11 @@ hr{
     margin: 0px 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.1s ease;
+}
+.section6 .fdback label i:hover{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    color: white;
 }
 .section6 .fdback .feedback1{
     width: 100%;
@@ -1687,6 +1692,102 @@ hr{
 }
 
 /*section 7 end */
+
+/*section 8 start */
+
+.section8{ 
+    height: 1420px;
+    width: 100%;
+    margin: 50px 0px;
+}
+.section8 h1{
+    font-size: 30px;
+}
+.section8 p{
+    width: 90%;
+    font-size: 15px;
+    color: rgba(22,22,22,0.5);
+    margin: 10px 0px;
+    line-height: 20px;
+}
+.section8 .mainblogs{
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.section8 .mainblogs .blogs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 330px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.section8 .mainblogs .blogs hr{
+    width: 100%;
+    opacity: 30%;
+    margin: 0;
+}
+.section8 .mainblogs .blogs .zoom{
+    width: 330px;
+    height: 190px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.section8 .mainblogs .blogs .profile img{
+    height: 30px;
+    cursor: pointer;
+}
+.section8 .mainblogs .blogs .profile h4{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-left: -20px;
+}
+
+.section8 .mainblogs .blogs .profile i{
+    color: rgba(11,11,11,0.5);
+    transform: translateX(20px);
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.section8 .mainblogs .blogs .profile i:hover{
+    color: rgba(255, 0, 0,0.5);
+}
+.section8 .mainblogs .blogs .post-text{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+.section8 .mainblogs .blogs .post-text h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.section8 .mainblogs .blogs:hover .post-text h2{
+    color: rgb(88, 88, 214);
+    transition: all 0.3s ease;
+}
+.section8 .mainblogs .blogs .post-text p{
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    margin: 20px 0px;
+}
+
+/*section 8 end */
 
 
 }
