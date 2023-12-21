@@ -28,6 +28,7 @@ header .logo{
     position: relative;
     left: 5%;
     cursor: pointer;
+    z-index: 1;
 }
 header .logo img{
     height: 50px;
@@ -524,7 +525,13 @@ hr{
     flex-direction: column;
     align-items: center;
 }
-.section6 .feedback img{
+.section6 .feedback1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.section6 .feedback2 img{
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -553,18 +560,35 @@ hr{
     justify-content: space-between;
     padding: 70px 0px;
 }
-.section6 .fdback .feedback{
+.section6 .fdback input{
+    display: none;
+}
+.section6 .fdback label{
+    display: none;
+}
+.section6 .fdback .feedback1{
     width: 48%;
     height: 200px;
     display: flex;
     background-color: #fffafa;
 }
-.section6 .fdback .feedback:hover{
+.section6 .fdback .feedback2{
+    width: 48%;
+    height: 200px;
+    display: flex;
+    background-color: #fffafa;
+}
+.section6 .fdback .feedback1:hover{
     transform: scale(1.1);
     background-color: rgb(218, 218, 218);
     transition: all 0.3s ease;
 }
-.section6 .fdback .feedback p{
+.section6 .fdback .feedback2:hover{
+    transform: scale(1.1);
+    background-color: rgb(218, 218, 218);
+    transition: all 0.3s ease;
+}
+.section6 .fdback .feedback1 p{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(22,22,22,0.5);
@@ -572,18 +596,44 @@ hr{
     line-height: 25px;
     margin-top: 25px;
 }
-.section6 .fdback .feedback h2{
+.section6 .fdback .feedback2 p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(22,22,22,0.5);
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.section6 .fdback .feedback1 h2{
     text-transform: capitalize;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px 0px;
     cursor: pointer;
 }
-.section6 .fdback .feedback h2:hover{
+.section6 .fdback .feedback2 h2{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+.section6 .fdback .feedback1:hover h2{
     color: rgba(35, 35, 109, 0.9);
     transition: all 0.3s ease ;
 }
-.section6 .fdback .feedback h4{
+.section6 .fdback .feedback2:hover h2{
+    color: rgba(35, 35, 109, 0.9);
+    transition: all 0.3s ease ;
+}
+.section6 .fdback .feedback1 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(22,22,22,0.5);
+    font-weight: 100;
+    font-size: 15px;
+    margin: 8px 0px;
+}
+.section6 .fdback .feedback2 h4{
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(22,22,22,0.5);
     font-weight: 100;
@@ -1456,71 +1506,187 @@ hr{
 
 /*section 5 end */
 
-
 /*section 6 start */
 
 .section6{
     width: 90%;
-    margin: 70px auto;
-    height: auto;
+    margin: 80px auto;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.section6 .feedback img{
+.section6 .feedback1 img{
     height: 30px;
     width: 30px;
-    margin-top: 10px;
+    border-radius: 50%;
+    padding: 20px;
 }
-.section6 .about{
-    width: 100%;
-    text-align: center;
+.section6 .feedback2 img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 20px;
 }
 .section6 .about h1{
     font-size: 30px;
 }
-
+.section6 .about p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(33,33,33,0.6);
+}
 .section6 .fdback{
     width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    position: relative;
+}
+.section6 .fdback label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+}
+.section6 .fdback label i{
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px rgb(173, 173, 173);
+    margin: 0px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.section6 .fdback .feedback1{
+    width: 100%;
+    height: 200px;
+    background-color: #fffafa;
+    position: absolute;
+    display: flex;
+}
+.section6 .fdback .feedback2{
+    width: 100%;
+    height: 200px;
+    display: none;
+    position: absolute;
+    background-color: #fffafa;
+}
+.section6 .fdback #click:checked ~ .feedback2{
+    display: flex;
+}
+
+.section6 .fdback .feedback1 p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(22,22,22,0.5);
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.section6 .fdback .feedback2 p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(22,22,22,0.5);
+    text-transform: capitalize;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+/*section 6 end */
+
+
+
+/*section 7 start */
+
+.section7{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+}
+.section7 .text h1{
+    font-size: 35px;
+}
+.section7 .mainCard{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.section7 .mainCard .cart{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px 0px;
+    width: 25%;
+    height: 350px;
+    margin: 0px 5px;
 }
-.section6 .fdback .feedback{
-    width: 100%;
-    height: auto;
+.section7 .mainCard .cart .circle{
+    height: 25px;
+    width: 25px;
+    border: 20px solid rgb(221, 221, 221);
+    border-radius: 50%;
     display: flex;
-    background-color: #fffafa;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-.section6 .fdback .feedback p{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(22,22,22,0.5);
-    text-transform: capitalize;
-    line-height: 20px;
-    margin-top: 25px;
+.section7 .mainCard .cart .circle h1{
+    height: auto;
+    padding: 5px;
+    width: 50px;
+    font-size: 25px;
+    font-weight: 300;
 }
-.section6 .fdback .feedback h2{
-    text-transform: capitalize;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5px 0px;
-    cursor: pointer;
+.section7 .mainCard .cart h2{
+    font-size: 15px;
+    top: 10px;
+    color: rgba(1,1,1,1);
 }
-.section6 .fdback .feedback:hover h2{
-    color: rgba(35, 35, 109, 0.9);
-    transition: all 0.3s ease ;
+.section7 .mainCard .cart hr{
+    opacity: 25%;
+    display: none;
 }
-.section6 .fdback .feedback h4{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(22,22,22,0.5);
-    font-weight: 100;
-    font-size: 14px;
-    margin: 8px 0px;
+.section7 .mainCard .cart h3{
+    font-size: 12px;
+    font-weight: 200;
+   text-align: center;
+   margin: 7px 0px;
+   padding: 0;
+   color: rgba(1,1,1,1);
+}
+.section7 .mainCard .cart h4{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 7px 0px;
+    color: rgba(1,1,1,1);
+}
+.section7 .mainCard .cart .money{
+    margin: 7px 0px;
+}
+.section7 .mainCard .cart .money h1{
+    position: absolute;
+    font-size: 15px;
+}
+.section7 .mainCard .cart .money button{
+    height: 30px;
+    width: 80%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 11px;
 }
 
-/*section 6 end */
+/*section 7 end */
+
 
 }
