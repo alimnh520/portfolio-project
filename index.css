@@ -1240,14 +1240,13 @@ hr{
     /* section 1 start */
 
     .section1{
-        width: 80%;
+        width: 90%;
         position: relative;
-        height: 360px;
+        height: 400px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0;
-        margin-top: 20px;
     }
     .section1 .text1{
         width: 50%;
@@ -1326,23 +1325,22 @@ hr{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 10px;
     }
     .section2{
         position: relative;
         margin: 50px auto;
-        width: 80%;
+        width: 90%;
         height: 300px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         overflow: hidden;
         background-color: white;
-        z-index: 1;
     }
     .section2 .text2{
-        width: 40%;
+        width: 100%;
         position: relative;
+        margin-left: 10px;
     }
     .section2 .text2 h4{
         font-size: 12px;
@@ -1391,7 +1389,7 @@ hr{
 
     .section3{
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
     height: auto;
     padding-bottom: 20px;
@@ -1471,7 +1469,7 @@ hr{
 
 .section5{
     position: relative;
-    height: auto;
+    height: fit-content;
 }
 .section5 .text{
    top: 50px;
@@ -1512,7 +1510,7 @@ hr{
 .section6{
     width: 90%;
     margin: 80px auto;
-    height: 450px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1538,12 +1536,13 @@ hr{
     color: rgba(33,33,33,0.6);
 }
 .section6 .fdback{
-    width: 90%;
+    width: 95%;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px;
+    margin-top: px;
     position: relative;
 }
 .section6 .fdback label{
@@ -1551,7 +1550,7 @@ hr{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 300px;
+    top: 260px;
 }
 .section6 .fdback label i{
     padding: 20px 10px;
@@ -1571,6 +1570,7 @@ hr{
     background-color: #fffafa;
     position: absolute;
     display: flex;
+    margin-bottom: 100px;
 }
 .section6 .fdback .feedback2{
     width: 100%;
@@ -1578,6 +1578,7 @@ hr{
     display: none;
     position: absolute;
     background-color: #fffafa;
+    margin-bottom: 100px;
 }
 .section6 .fdback #click:checked ~ .feedback2{
     display: flex;
@@ -1611,7 +1612,7 @@ hr{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 600px;
+    height: 650px;
     padding: 0;
     margin: 0;
 }
@@ -1624,6 +1625,7 @@ hr{
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    height: 450px;
 }
 .section7 .mainCard .cart{
     display: flex;
@@ -1631,7 +1633,7 @@ hr{
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    height: 350px;
+    height: 420px;
     margin: 0px 5px;
 }
 .section7 .mainCard .cart .circle{
