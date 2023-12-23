@@ -1161,7 +1161,7 @@ hr{
     }
     header .navbar ul li{
         height: 30px;
-        width: 110px;
+        width: 90%;
         border-radius: 2px;
         border: none;
         position: relative;
