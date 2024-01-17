@@ -170,6 +170,7 @@ header .navbar ul li a{
     align-items: center;
     justify-content: space-between;
 }
+
 .section1 .text1{
     width: 50%;
 }
@@ -390,7 +391,21 @@ hr{
     align-items: center;
     justify-content: center;
 }
+
+.section4:hover .text{
+    animation: sec4 0.4s linear;
+    display: flex;
+}
+@keyframes sec4 {
+    0%{
+        top: 300px;
+    }
+    100%{
+        top: 0px;
+    }
+}
 .section4 .text{
+    position: relative;
     width: 20%;
     display: flex;
     align-items: center;
@@ -1453,6 +1468,7 @@ hr{
     height: 200px;
     width: 100%;
 }
+
 .section4 .text{
     width: 25%;
 }
@@ -1475,6 +1491,7 @@ hr{
     position: relative;
     height: fit-content;
 }
+
 .section5 .text{
    top: 50px;
 }
