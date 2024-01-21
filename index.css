@@ -1155,9 +1155,19 @@ hr{
         position: absolute;
         right: 10%;
         font-size: 30px;
+        cursor: pointer;
     }
     header #chkbox:checked ~ .navbar .check{
         display: flex;
+        animation: menu 0.5s linear;
+    }
+    @keyframes menu {
+        0%{
+            left: -50%;
+        }
+        100%{
+            left: 0%;
+        }
     }
     header .navbar ul{
         display: none;
